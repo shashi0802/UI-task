@@ -1,0 +1,214 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <title> </title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body class="background">
+
+    <div class="main-wrapper">
+
+        <div class="wrapper notactive active">
+            <div class="item">
+                <span>1&#8594;</span>
+            </div>
+            <div class="question">
+                <span>First, give your persona a name.</span>
+            </div>
+            <div class="content">
+                <input type="text" class="textbox" id="textbox1">
+                
+            </div>
+            <div class="confirm-container">
+                <button class="buttonok">
+                    <p>OK &#10004;</p>
+                </button>
+
+            </div>
+        </div>
+
+        <div class="wrapper notactive">
+            <div class="item">
+                <span>2&#8594;</span>
+            </div>
+            <div class="question">
+                <span>Select your Gender.</span>
+            </div>
+            <div class="content">
+                <label>
+                    <input type="radio" name="gender" value="Male"> Male
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="Female"> Female
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="other"> Other
+
+                    <input type="text" id="area" style="display: none;" name="area" placeholder="Enter your gender">
+                </label>
+
+
+            </div>
+            <div class="confirm-container">
+                <button class="buttonok">
+                    <p>OK &#10004;</p>
+                </button>
+
+            </div>
+        </div>
+
+        <div class="wrapper notactive">
+            <div class="item">
+                <span>3&#8594;</span>
+            </div>
+            <div class="question">
+                <span> Enter your experience.</span>
+            </div>
+            <div class="content">
+                <label class="container">One year
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Two year
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Three year
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">More then Three
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <div class="confirm-container">
+                <button class="buttonok">
+                    <p>OK &#10004;</p>
+                </button>
+
+            </div>
+        </div>
+
+        <div class="wrapper notactive">
+            <div class="item">
+                <span>4&#8594;</span>
+            </div>
+            <div class="question">
+                <span>Give your date of birth.</span>
+            </div>
+            <div class="content">
+                <input type="date" id="my-date" value="dd/mm/yy" autocomplete="off ">
+            </div>
+            <div class="confirm-container">
+                <button class="buttonok">
+                    <p>OK &#10004;</p>
+                </button>
+
+            </div>
+        </div>
+        <div class="wrapper notactive">
+            <div class="item">
+                <span>5&#8594;</span>
+            </div>
+            <div class="question">
+                <span>Enter your email address.</span>
+            </div>
+            <div class="content">
+                <input type="text" id="email" class="textbox" placeholder="abc@gmail.com">
+                <p id="ee"></p>
+            </div>
+            <div class="confirm-container">
+                <button class="buttonok" id="buttonok">
+                    <p>OK &#10004;</p>
+                </button>
+            </div>
+        </div>
+
+        <div class="wrapper notactive ">
+            <div class="item">
+                <span>6&#8594;</span>
+            </div>
+            <div class="question">
+                <span>What tools does you use or need?</span>
+            </div>
+            <div class="content">
+                <input type="text" class="textbox" id="need">
+                <p id="ee1"></p>
+            </div>
+            <div class="confirm-container">
+                <button class="buttonok" id="buttonok1">
+                    <p>OK &#10004;</p>
+                </button>
+            </div>
+        </div>
+
+        <div class="wrapper notactive">
+            <div class="item">
+                <span>7&#8594;</span>
+            </div>
+            <div class="question">
+                <span>Who does a report to?</span>
+            </div>
+            <div class="content">
+                <input type="text" class="textbox" id="ttt7">
+                <p id="ee7"></p>
+            </div>
+            <div class="confirm-container">
+                <button class="buttonok" id="buttonok7">
+                    <p>OK &#10004;</p>
+                </button>
+            </div>
+        </div>
+
+        <div class="wrapper notactive ">
+            <div class="item">
+                <span>8&#8594;</span>
+            </div>
+            <div class="question">
+                <span>In which industry does you work?</span>
+            </div>
+            <div class="content">
+                <input type="text" class="textbox" id="ttt8">
+                <p id="ee8"></p>
+            </div>
+            <div class="confirm-container">
+                <button class="buttonok" id="buttonok8">
+                    <p>OK &#10004;</p>
+                </button>
+            </div>
+        </div>
+
+        <div class="wrapper notactive ">
+            <div class="item">
+                <span>9&#8594;</span>
+            </div>
+            <div class="question">
+                <span>Enter your job title.</span>
+            </div>
+            <div class="content">
+                <input type="text" class="textbox" id="ttt9">
+                <p id="ee9"></p>
+            </div>
+            <div class="confirm-container" id="buttonok9">
+                <button class="buttonok">
+                    <p>OK &#10004;</p>
+                </button>
+            </div>
+        </div>
+
+        <button value="Submit" id="submit">Submit</button>
+
+
+    </div>
+
+
+</body>
+
+</html>
