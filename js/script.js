@@ -7,10 +7,29 @@ $(document).ready(function () {
 
     $('.buttonok').click(function () {
         var tabToScroll = $(this).closest('.wrapper');
+        if ($("#textbox1").val() != "") {
+            $(tabToScroll).removeClass('active')
+            $(tabToScroll).next().addClass('active');
+            $('html,body').animate({ scrollTop: ($(tabToScroll).offset().top - $(tabToScroll).innerHeight() / 2) }, 'slow');
+        }
+        if ($("#email").val() != "") {
+            $(tabToScroll).removeClass('active')
+            $(tabToScroll).next().addClass('active');
+            $('html,body').animate({ scrollTop: ($(tabToScroll).offset().top - $(tabToScroll).innerHeight() / 2) }, 'slow');
+        }
+        else {
+            $(tabToScroll).addClass('active')
+            $(tabToScroll).next().removeClass('active');
+
+        }
+    });
+    $('.rd').click(function () {
+        var tabToScroll = $(this).closest('.wrapper');
         $(tabToScroll).removeClass('active')
         $(tabToScroll).next().addClass('active');
         $('html,body').animate({ scrollTop: ($(tabToScroll).offset().top - $(tabToScroll).innerHeight() / 2) }, 'slow');
-    })
+    });
+
 
 
     $(document).on("scroll", function () {
@@ -74,13 +93,23 @@ $(document).ready(function () {
         }
     });
 
+    
+    // for date valiadation
+    $('#buttonokd').bind('click', function () {
+        var txtVal = $('#txtDate').val();
+        if ($(txtVal).length == 0)
+            $("#db").text("Enter the date").css({ "color": "red", "font-size": "20px", "padding": "2%" });
+    });
+
+    
+
     $('#buttonok').click(function () {
         var sEmail = $('#email').val();
         if ($.trim(sEmail).length == 0) {
             $("#ee").text("Enter the valid email.");
-            $("#ee").css({"color": "red","font-size":"20px","padding":"2%"});
+            $("#ee").css({ "color": "red", "font-size": "20px", "padding": "2%" });
         }
-        else{
+        else {
             $("#ee").hide();
         }
     });
@@ -89,9 +118,9 @@ $(document).ready(function () {
         var sEmail = $('#need').val();
         if ($.trim(sEmail).length == 0) {
             $("#ee1").text("Enter the text.");
-            $("#ee1").css({"color": "red","font-size":"20px","padding":"2%"});
+            $("#ee1").css({ "color": "red", "font-size": "20px", "padding": "2%" });
         }
-        else{
+        else {
             $("#ee1").hide();
         }
     });
@@ -99,9 +128,9 @@ $(document).ready(function () {
         var sEmail = $('#ttt7').val();
         if ($.trim(sEmail).length == 0) {
             $("#ee7").text("Enter the text.");
-            $("#ee7").css({"color": "red","font-size":"20px","padding":"2%"});
+            $("#ee7").css({ "color": "red", "font-size": "20px", "padding": "2%" });
         }
-        else{
+        else {
             $("#ee7").hide();
         }
     });
@@ -110,9 +139,9 @@ $(document).ready(function () {
         var sEmail = $('#ttt8').val();
         if ($.trim(sEmail).length == 0) {
             $("#ee8").text("Enter the text.");
-            $("#ee8").css({"color": "red","font-size":"20px","padding":"2%"});
+            $("#ee8").css({ "color": "red", "font-size": "20px", "padding": "2%" });
         }
-        else{
+        else {
             $("#ee8").hide();
         }
     });
@@ -120,9 +149,9 @@ $(document).ready(function () {
         var sEmail = $('#ttt9').val();
         if ($.trim(sEmail).length == 0) {
             $("#ee9").text("Enter the text.");
-            $("#ee9").css({"color": "red","font-size":"20px","padding":"2%"});
+            $("#ee9").css({ "color": "red", "font-size": "20px", "padding": "2%" });
         }
-        else{
+        else {
             $("#ee9").hide();
         }
     });

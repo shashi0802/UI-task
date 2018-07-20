@@ -23,7 +23,7 @@
             </div>
             <div class="content">
                 <input type="text" class="textbox" id="textbox1">
-                
+
             </div>
             <div class="confirm-container">
                 <button class="buttonok">
@@ -41,26 +41,24 @@
                 <span>Select your Gender.</span>
             </div>
             <div class="content">
-                <label>
+                <label class="rd">
                     <input type="radio" name="gender" value="Male"> Male
                 </label>
-                <label>
+                <label class="rd">
                     <input type="radio" name="gender" value="Female"> Female
                 </label>
-                <label>
+                <label class="rd">
                     <input type="radio" name="gender" value="other"> Other
 
                     <input type="text" id="area" style="display: none;" name="area" placeholder="Enter your gender">
                 </label>
-
-
             </div>
-            <div class="confirm-container">
+            <!-- <div class="confirm-container">
                 <button class="buttonok">
                     <p>OK &#10004;</p>
                 </button>
 
-            </div>
+            </div> -->
         </div>
 
         <div class="wrapper notactive">
@@ -104,10 +102,11 @@
                 <span>Give your date of birth.</span>
             </div>
             <div class="content">
-                <input type="date" id="my-date" value="dd/mm/yy" autocomplete="off ">
+                <input type="text" id="txtDate" placeholder="dd/mm/yyyy">
+                <p id="db"></p>
             </div>
             <div class="confirm-container">
-                <button class="buttonok">
+                <button class="buttonok" id="buttonokd">
                     <p>OK &#10004;</p>
                 </button>
 

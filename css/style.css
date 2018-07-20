@@ -92,17 +92,20 @@ table {
 }
 .question
 {
-    font-size: 30px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-size: 22px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: normal;
 
 }
 .content
 {
     width: 60%;
     padding: 2%;
-    font-size: 24px;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
 } 
-#my-date{padding: 2%;}  
+#txtDate{padding: 2%;}  
 .content .textbox
 {
     width:100%;
@@ -121,7 +124,8 @@ table {
     position: relative;
     padding-left: 30px;
     cursor: pointer;
-    font-size: 24px;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
     
 }
 /* Hide the browser's default checkbox */
@@ -129,6 +133,7 @@ table {
     position: absolute;
     opacity: 0;
     cursor: pointer;
+    
 }
 
 /* Create a custom checkbox */
@@ -176,7 +181,7 @@ table {
 }
 
 
-
+.content input{font-family: 'Times New Roman', Times, serif; font-size: 16px; font-weight: normal;}
 
 .confirm-container
 {
